@@ -1,0 +1,39 @@
+Total Sales GBP = SUM(SalesLines[RevenueGBP])
+
+Order Count = DISTINCTCOUNT(SalesLines[InvoiceNo])
+
+Average Order Value GBP = DIVIDE([Total Sales GBP], [Order Count])
+
+Units Sold = SUM(SalesLines[Quantity])
+
+Identified Customers = DISTINCTCOUNT(SalesLines[CustomerID])
+
+Repeat Customers =
+CALCULATE(
+    DISTINCTCOUNT(CustomerSummary[CustomerID]),
+    CustomerSummary[OrderCount] >= 2
+)
+
+Repeat Customer Rate =
+DIVIDE([Repeat Customers], DISTINCTCOUNT(CustomerSummary[CustomerID]))
+
+Identified Customer Sales GBP =
+CALCULATE(
+    [Total Sales GBP],
+    NOT ISBLANK(SalesLines[CustomerID])
+)
+
+Revenue per Identified Customer GBP =
+DIVIDE([Identified Customer Sales GBP], [Identified Customers])
+
+Revenue Previous Month GBP =
+CALCULATE(
+    [Total Sales GBP],
+    DATEADD('Calendar'[Date], -1, MONTH)
+)
+
+Revenue MoM Change % =
+DIVIDE(
+    [Total Sales GBP] - [Revenue Previous Month GBP],
+    [Revenue Previous Month GBP]
+)
