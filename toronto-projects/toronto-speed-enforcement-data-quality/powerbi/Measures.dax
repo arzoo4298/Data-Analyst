@@ -1,0 +1,4 @@
+Observed charges = SUM(SiteMonth[charges])
+Sites represented = DISTINCTCOUNT(SiteMonth[site_instance_id])
+Site-month rows = COUNTROWS(SiteMonth)
+Average observed charges per site-month = DIVIDE([Observed charges], [Site-month rows])

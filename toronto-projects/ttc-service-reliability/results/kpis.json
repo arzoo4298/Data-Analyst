@@ -1,0 +1,11 @@
+{
+  "source_rows": 45475,
+  "clean_rows": 45475,
+  "duplicate_ids_removed": 0,
+  "missing_dates_removed": 0,
+  "total_delay_minutes": 122071,
+  "reported_incidents": 45475,
+  "date_min": "2025-01-01",
+  "date_max": "2026-08-31",
+  "delay_zero_or_missing_after_fill": 29669
+}

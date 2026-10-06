@@ -1,0 +1,6 @@
+Reported incidents = COUNTROWS(Delays)
+Reported delay minutes = SUM(Delays[delay_min])
+Average reported delay (min) = AVERAGE(Delays[delay_min])
+Median reported delay (min) = MEDIAN(Delays[delay_min])
+Locations affected = DISTINCTCOUNT(Delays[station])
+Incident share = DIVIDE([Reported incidents], CALCULATE([Reported incidents], ALL(Delays[line])))

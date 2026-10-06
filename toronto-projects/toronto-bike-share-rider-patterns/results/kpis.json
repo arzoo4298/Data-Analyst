@@ -1,0 +1,15 @@
+{
+  "source_rows": 552073,
+  "clean_trips": 548371,
+  "duplicate_trip_ids_removed": 0,
+  "missing_or_invalid_timestamps": 498,
+  "trips_removed_by_duration_rule": 3204,
+  "start_date": "2026-01-01 00:00:26",
+  "end_date": "2026-03-31 23:59:47",
+  "median_trip_minutes": 9.733333333333333,
+  "user_types": {
+    "Member": 487666,
+    "Casual": 60705
+  },
+  "data_period": "2026 Q1"
+}

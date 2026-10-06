@@ -31,6 +31,11 @@ Recorded line revenue reached about £1.51M in November 2011. The UK contributed
 ## Other work
 
 - [Campaign Compass — Bank Marketing](https://github.com/arzoo4298/campaign-compass-bank-marketing): a customer outreach analysis project focused on campaign response and practical targeting insights.
+- [TTC Subway Service Reliability](toronto-projects/ttc-service-reliability/): SQL, Python, and Power BI starter analysis of subway delay patterns.
+- [Bike Share Rider Patterns](toronto-projects/toronto-bike-share-rider-patterns/): rider behavior visualizations and trip analysis using SQL, Python, and Power BI.
+- [Speed Enforcement Data Quality](toronto-projects/toronto-speed-enforcement-data-quality/): data cleaning, missing-data handling, and monthly operational trends.
+
+Each Toronto project includes a reproducible Python analysis script, SQL queries, result summaries, charts, Power BI DAX measures, and a Power Query starter. The source data are downloaded by the scripts and excluded from GitHub; rerun the analysis to refresh them. The bike-share analysis covers Q1 2026 only, and the speed-enforcement analysis keeps blanks as missing values.
 
 ## About this portfolio
 

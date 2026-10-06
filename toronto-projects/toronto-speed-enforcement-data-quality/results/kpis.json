@@ -1,0 +1,12 @@
+{
+  "source_sites": 631,
+  "site_code_reuse_rows": 110,
+  "month_columns": 65,
+  "site_month_cells": 41015,
+  "blank_or_dash_cells": 36173,
+  "clean_site_month_rows": 4842,
+  "charges_total_for_observed_cells": 2150715,
+  "first_month": "2020-07-01",
+  "last_month": "2025-11-01",
+  "wards": 25
+}

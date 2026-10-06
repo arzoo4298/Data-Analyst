@@ -22,7 +22,7 @@
   <main id="projects">
     <section class="section-heading"><p class="eyebrow">SELECTED WORK</p><h2>Projects with a<br><em>business point of view.</em></h2></section>
     <article class="project-card">
-      <div class="project-top"><span class="tag">FEATURED PROJECT · RETAIL ANALYTICS</span><span class="project-num">01 / 02</span></div>
+      <div class="project-top"><span class="tag">FEATURED PROJECT · RETAIL ANALYTICS</span><span class="project-num">01 / 05</span></div>
       <div class="project-title"><h3>Retail Sales &amp;<br>Customer Performance</h3><p>From 541,909 transaction rows to a reproducible sales and customer performance dashboard.</p></div>
       <div class="metrics"><div><strong>£10.67M</strong><span>recorded line revenue</span></div><div><strong>65.6%</strong><span>identified customers repeat</span></div><div><strong>38</strong><span>countries in the source</span></div></div>
       <div class="charts"><figure><img src="assets/monthly_sales.png" alt="Monthly retail sales revenue from December 2010 through December 2011"><figcaption>Monthly sales · December 2011 is partial</figcaption></figure><figure><img src="assets/customer_segments.png" alt="Revenue across customer recency, frequency and monetary value segments"><figcaption>Customer segments · heuristic RFM groups</figcaption></figure></div>
@@ -30,9 +30,33 @@
       <p class="fineprint">UCI Online Retail, 2010–2011. Sales are positive quantity × unit price on non-cancelled lines, including qualifying service lines. RFM groups are descriptive, not causal.</p>
     </article>
     <article class="project-card secondary">
-      <div class="project-top"><span class="tag">CUSTOMER OUTREACH · BANKING</span><span class="project-num">02 / 02</span></div>
+      <div class="project-top"><span class="tag">CUSTOMER OUTREACH · BANKING</span><span class="project-num">02 / 05</span></div>
       <div class="project-title"><h3>Campaign Compass</h3><p>A bank marketing analysis focused on understanding campaign responses and shaping practical outreach questions.</p></div>
       <div class="project-bottom"><div class="stack"><span>Analytics</span><span>Customer campaigns</span></div><a href="https://github.com/arzoo4298/campaign-compass-bank-marketing">View GitHub project <span aria-hidden="true">↗</span></a></div>
+    </article>
+    <article class="project-card secondary">
+      <div class="project-top"><span class="tag">POWER BI · SQL · TRANSIT OPERATIONS</span><span class="project-num">03 / 05</span></div>
+      <div class="project-title"><h3>TTC Subway Service Reliability</h3><p>Explore delay patterns by line, station, time, and incident code using Toronto's published subway delay records.</p></div>
+      <div class="metrics"><div><strong>45,475</strong><span>incident records</span></div><div><strong>122,071</strong><span>reported delay minutes</span></div><div><strong>Jan 2025–Aug 2026</strong><span>source period</span></div></div>
+      <div class="charts"><figure><img src="assets/ttc_monthly_incidents.png" alt="Monthly TTC subway delay incidents"><figcaption>Monthly incidents</figcaption></figure><figure><img src="assets/ttc_line_delays.png" alt="Reported delay minutes by subway line"><figcaption>Reported minutes by line</figcaption></figure></div>
+      <div class="project-bottom"><div class="stack"><span>SQL / DuckDB</span><span>Python</span><span>Power BI</span></div><a href="toronto-projects/ttc-service-reliability/">Read project brief <span aria-hidden="true">↗</span></a></div>
+      <p class="fineprint">Zero and missing delay values are retained as published/cleaned; reported minutes should not be read as total passenger impact or service performance.</p>
+    </article>
+    <article class="project-card secondary">
+      <div class="project-top"><span class="tag">VISUALIZATION · CUSTOMER BEHAVIOR</span><span class="project-num">04 / 05</span></div>
+      <div class="project-title"><h3>Bike Share Rider Patterns</h3><p>Compare member and casual rider trip timing, duration, and station use from a reproducible Q1 2026 sample.</p></div>
+      <div class="metrics"><div><strong>548,371</strong><span>valid trips analyzed</span></div><div><strong>487,666</strong><span>member trips</span></div><div><strong>11.2 min</strong><span>casual median trip</span></div></div>
+      <div class="charts"><figure><img src="assets/bike_monthly_riders.png" alt="Monthly rides split by member and casual user types"><figcaption>Trips by rider type</figcaption></figure><figure><img src="assets/bike_hourly_demand.png" alt="Hourly bike share demand split by rider type"><figcaption>Hourly demand</figcaption></figure></div>
+      <div class="project-bottom"><div class="stack"><span>Python</span><span>SQL / DuckDB</span><span>Power BI</span></div><a href="toronto-projects/toronto-bike-share-rider-patterns/">Read project brief <span aria-hidden="true">↗</span></a></div>
+      <p class="fineprint">The source covers Q1 2026 only. Seasonal comparisons and causal claims are outside this analysis.</p>
+    </article>
+    <article class="project-card secondary">
+      <div class="project-top"><span class="tag">DATA CLEANING · PUBLIC OPERATIONS</span><span class="project-num">05 / 05</span></div>
+      <div class="project-title"><h3>Speed Enforcement Data Quality</h3><p>Reshape a wide monthly workbook, preserve unreported values as missing, and analyze observed automated speed enforcement charges.</p></div>
+      <div class="metrics"><div><strong>631</strong><span>site-period rows</span></div><div><strong>4,842</strong><span>observed site-months</span></div><div><strong>36,173</strong><span>unreported cells preserved</span></div></div>
+      <div class="charts"><figure><img src="assets/ase_monthly_charges.png" alt="Monthly automated speed enforcement charges"><figcaption>Observed charges by month</figcaption></figure><figure><img src="assets/ase_ward_charges.png" alt="Automated speed enforcement charges by ward"><figcaption>Observed charges by ward</figcaption></figure></div>
+      <div class="project-bottom"><div class="stack"><span>Python</span><span>SQL / DuckDB</span><span>Power BI</span></div><a href="toronto-projects/toronto-speed-enforcement-data-quality/">Read project brief <span aria-hidden="true">↗</span></a></div>
+      <p class="fineprint">Blank and dash values remain missing, not zero. Site identifiers combine code, location, and enforcement start date because codes can recur.</p>
     </article>
     <section class="about"><p class="eyebrow">HOW I WORK</p><h2>Make the numbers<br><em>useful and trustworthy.</em></h2><p>I start by defining the metric, documenting data quality choices, and checking what the data can and cannot say. Then I shape the results into a clear report a team can act on.</p><div class="principles"><div><b>01</b><span>Ask a focused business question</span></div><div><b>02</b><span>Build a repeatable analysis</span></div><div><b>03</b><span>Show the result with context</span></div></div></section>
   </main>

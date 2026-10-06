@@ -1,0 +1,6 @@
+Trips = COUNTROWS(Trips)
+Median trip duration (min) = MEDIAN(Trips[trip_minutes])
+Average trip duration (min) = AVERAGE(Trips[trip_minutes])
+Member trips = CALCULATE([Trips], Trips[user_type] = "Member")
+Casual trips = CALCULATE([Trips], Trips[user_type] = "Casual")
+Member trip share = DIVIDE([Member trips], [Trips])
